@@ -1,0 +1,55 @@
+{
+  "name": "@denz93/vendure-plugin-3rd-party-auth",
+  "version": "0.0.0",
+  "description": "A set of auth strategies to work with 3rd party such as Google, Facebook, etc",
+  "main": "index.js",
+  "author": "Nhan Bach <inbox@nhanbach.dev>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "vendure",
+    "plugin",
+    "third-party-auth",
+    "authentication",
+    "oauth2",
+    "google",
+    "facebook"
+  ],
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest --coverage",
+    "test:debug": "vitest run --test-timeout 300000",
+    "test:coverage": "vitest run --coverage",
+    "build": "rm -rf ./dist && tsc"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7",
+    "@nestjs/core": "^7",
+    "@nestjs/platform-express": "^7",
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "@vendure/common": "^1.9.5",
+    "@vendure/core": "^1.9.5",
+    "@vendure/testing": "^1.9.5",
+    "@vitest/coverage-istanbul": "^0.29.7",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.36.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "sql.js": "^1.8.0",
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.7"
+  },
+  "dependencies": {
+    "@nestjs/axios": "^2.0.0",
+    "axios": "^1.3.4",
+    "google-auth-library": "^8.7.0",
+    "graphql-tag": "^2.12.6"
+  }
+}

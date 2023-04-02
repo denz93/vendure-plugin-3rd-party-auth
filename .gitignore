@@ -1,0 +1,6 @@
+node_modules
+dist
+coverage
+yarn-error.log
+.env
+test/__data__

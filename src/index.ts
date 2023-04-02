@@ -1,0 +1,5 @@
+export * from './plugin.module'
+export * from './constants'
+export * from './google-auth.strategy'
+export * from './facebook-auth.strategy'
+export * from './interfaces'
