@@ -15,6 +15,7 @@ import { GoogleAuthService } from '../src/google-auth.service'
 dotenv.config()
 
 registerInitializer('sqljs', new SqljsInitializer(path.join(__dirname, '__data__')))
+const productPath = path.join(__dirname, 'fixtures/e2e-products-minimal.csv')
 
 const AUTHENTICATION_GOOGLE = gql(`
     mutation auth($token: String!) {
@@ -100,10 +101,10 @@ const desc1 = describe('Authentication Test', () => {
     beforeAll(async () =>{
         await server.init({
             initialData: initialData,
-            productsCsvPath: path.join(__dirname, 'fixtures/e2e-products-full.csv')
+            productsCsvPath: productPath
 
         })
-    })
+    }, 30000)
     afterAll(async () => {
         await server.destroy()
     })
@@ -251,9 +252,9 @@ describe('Load plugin without any providers', () => {
 
         await server.init({
             initialData: initialData,
-            productsCsvPath: path.join(__dirname, 'fixtures/e2e-products-full.csv')
+            productsCsvPath: productPath
         })
-    })
+    }, 30000)
     afterAll(async () => {
         await server.destroy()
     })
