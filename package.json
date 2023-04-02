@@ -1,6 +1,6 @@
 {
   "name": "@denz93/vendure-plugin-3rd-party-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of auth strategies to work with 3rd party such as Google, Facebook, etc",
   "main": "index.js",
   "author": "Nhan Bach <inbox@nhanbach.dev>",
