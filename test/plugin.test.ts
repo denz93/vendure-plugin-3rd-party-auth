@@ -100,7 +100,7 @@ const desc1 = describe('Authentication Test', () => {
     beforeAll(async () =>{
         await server.init({
             initialData: initialData,
-            productsCsvPath: path.join(__dirname, 'fixtures/e2e/products-full.csv')
+            productsCsvPath: path.join(__dirname, 'fixtures/e2e-products-full.csv')
 
         })
     })
