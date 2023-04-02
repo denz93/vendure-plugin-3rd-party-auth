@@ -1,16 +1,16 @@
 name: Publish Package to npmjs
 on:
   push:
-    branches: master
+    branches: main
 env:
-  FACEBOOK_CLIENT_ID: ${{ serects.FACEBOOK_CLIENT_ID }}
-  FACEBOOK_CLIENT_SECRET: ${{ serects.FACEBOOK_CLIENT_SECRET }}
-  FACEBOOK_LONG_LIVE_TOKEN: ${{ serects.FACEBOOK_LONG_LIVE_TOKEN }}
-  FACEBOOK_TEST_EMAIL: ${{ serects.FACEBOOK_TEST_EMAIL }}
-  GOOGLE_CLIENT_ID: ${{ serects.GOOGLE_CLIENT_ID }}
+  FACEBOOK_CLIENT_ID: ${{ secrets.FACEBOOK_CLIENT_ID }}
+  FACEBOOK_CLIENT_SECRET: ${{ secrets.FACEBOOK_CLIENT_SECRET }}
+  FACEBOOK_LONG_LIVE_TOKEN: ${{ secrets.FACEBOOK_LONG_LIVE_TOKEN }}
+  FACEBOOK_TEST_EMAIL: ${{ secrets.FACEBOOK_TEST_EMAIL }}
+  GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
   GOOGLE_CLIENT_SECRET: ${{ serects.GOOGLE_CLIENT_SECRET }}
-  GOOGLE_REFRESH_TOKEN: ${{ serects.GOOGLE_REFRESH_TOKEN }}
-  GOOGLE_TEST_EMAIL: ${{ serects.GOOGLE_TEST_EMAIL }}
+  GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+  GOOGLE_TEST_EMAIL: ${{ secrets.GOOGLE_TEST_EMAIL }}
 jobs:
   build:
     runs-on: ubuntu-latest
