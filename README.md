@@ -1,5 +1,9 @@
 # Third-Party Auth Plugin for Vendure.io
 
+[![Test CI](https://github.com/denz93/vendure-plugin-3rd-party-auth/actions/workflows/test.yml/badge.svg)](https://github.com/denz93/vendure-plugin-3rd-party-auth/actions/workflows/test.yml)
+[![Publish Package to npmjs](https://github.com/denz93/vendure-plugin-3rd-party-auth/actions/workflows/publish.yml/badge.svg)](https://github.com/denz93/vendure-plugin-3rd-party-auth/actions/workflows/publish.yml)
+[![Coverage](https://denz93.github.io/vendure-plugin-3rd-party-auth/badge.svg)](https://denz93.github.io/vendure-plugin-3rd-party-auth/)
+
 A Vendure plugin allow users to be authenticated using third-party providers such as Google, Facebook, etc
 
 ## Supported Providers
